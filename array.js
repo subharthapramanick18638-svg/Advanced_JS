@@ -91,7 +91,7 @@
 
 // console.log(a);
 //----------------------------------------------
-//maximum value checking
+// maximum value checking
 //  let a =[11,2,12,9,8];
 
 //  let b=a.reduce((acc,cur)=>{
@@ -105,7 +105,7 @@
 //         console.log("not satisfy",acc);
 //     }
 //  })
-// let b=a.reduce((acc,cur)=>cur>acc? cur:acc)//ternary oparator
+//let b=a.reduce((acc,cur)=>cur>acc? cur:acc)//ternary oparator
 
 //  console.log(b);
 //---------------------------------------------
@@ -116,16 +116,16 @@
 // },{})
 // console.log(b);
 //--------------------------------------------
-const cart = [
-  { item: "Shirt", price: 500 },
-  { item: "Pant", price: 800 },
-  { item: "Shoes", price: 1200 }
-];
+// const cart = [
+//   { item: "Shirt", price: 500 },
+//   { item: "Pant", price: 800 },
+//   { item: "Shoes", price: 1200 }
+// ];
 
-const total = cart.reduce((acc,cur)=>{
-    return acc+cur.price;
-},0);
-console.log(total);
+// const total = cart.reduce((acc,cur)=>{
+//     return acc+cur.price;
+// },0);
+// console.log(total);
 
 //--------------------------------------------
 
@@ -148,3 +148,90 @@ console.log(total);
 //     return acc;
 // },{});
 // console.log(b);
+
+//---------------------------------------------------
+
+// function hello(a,b,c=0,d=1){
+
+// console.log(a)
+// console.log(b)
+// console.log(c)
+
+// }
+
+// hello(1,2)
+
+// let a="hello boys";
+// Output= "Hello Boys"--->
+// let words= a.split(" ");
+// let result= " ";
+
+// for(let i=0;i<words.length;i++){
+//     let word = words[i];
+//     console.log(word);
+//     let fc=word[0].toUpperCase()+word.slice(1);
+//     console.log(fc)
+//     result= result+fc+" ";
+//     console.log(result);
+// }
+// console.log(result.trim());
+//-----------using map method
+// let b= a.split(" ").map((item)=>item.charAt(0).toUpperCase()+item.slice(1)).join(" ");
+// console.log(b);
+
+//Output= "hellO boyS"------>
+// let words= a.split(" ");
+// let result= " ";
+
+// for(let i=0;i<words.length;i++){
+//     let word = words[i];
+//     console.log(word);
+//     let lc=word.slice(0,-1)+word[word.length-1].toUpperCase();
+//     console.log(lc)
+//     result= result+lc+" ";
+//     console.log(result);
+// }
+// console.log(result.trim());
+
+//---------------using map method
+// let c= a.split(" ").map((item)=>item.slice(0,-1)+item.charAt(item.length-1).toUpperCase()).join(" ");
+// console.log(c);
+
+//-------------------------------------------------------------
+
+// let a = ["subhartha","krishna"];
+// let b =[25,26];
+// let c=a.map((item,index)=>[item,b[index]]);
+// console.log(c);
+
+//-------------------------------------------------------------
+// let a="programming"
+// let b=a.split("").reduce((acc,cur)=>{
+//     if(!acc.includes(cur)){
+//         acc.push(cur)
+//     }
+//     return acc;
+// },[]).join("");
+// console.log(b);
+
+//-------------------------------------------------------------
+// let arr1 = [1,2,3];
+// let arr2 = [2,3,4];
+// let com=arr1.filter((value)=> arr2.includes(value)).join();
+// console.log(com);
+
+//-----------------------------------------------------------
+
+// console.log(Math.floor((Math.random())*5)+1);//range 1 to 5
+
+// console.log(Math.floor((Math.random()*6)+5));//range 5 to 10
+
+//console.log(Math.floor(Math.random() * (10 - 5 + 1) + 5));//range 5 to 10
+
+
+
+
+
+
+
+
